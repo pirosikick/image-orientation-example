@@ -7,7 +7,7 @@
     "copy": "make-dir public/images && cpy exif-orientation-examples/*.jpg public/images",
     "serve": "serve public",
     "dev": "run-s copy serve",
-    "gh-pages": "gh-pages public",
+    "gh-pages": "gh-pages -d public",
     "publish": "run-s copy gh-pages"
   },
   "repository": {
