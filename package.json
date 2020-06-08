@@ -1,0 +1,31 @@
+{
+  "name": "image-orientation-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "copy": "make-dir public/images && cpy exif-orientation-examples/*.jpg public/images",
+    "serve": "serve public",
+    "dev": "run-s copy serve",
+    "gh-pages": "gh-pages public",
+    "publish": "run-s copy gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pirosikick/image-orientation-example.git"
+  },
+  "keywords": [],
+  "author": "Hiroyuki ANAI <pirosikick@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pirosikick/image-orientation-example/issues"
+  },
+  "homepage": "https://github.com/pirosikick/image-orientation-example#readme",
+  "devDependencies": {
+    "cpy-cli": "^3.1.1",
+    "gh-pages": "^3.0.0",
+    "make-dir-cli": "^2.0.0",
+    "npm-run-all": "^4.1.5",
+    "serve": "^11.3.2"
+  }
+}
